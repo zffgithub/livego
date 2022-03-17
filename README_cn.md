@@ -29,7 +29,8 @@
 直接下载编译好的[二进制文件](https://github.com/gwuhaolin/livego/releases)后，在命令行中执行。
 
 #### 从 Docker 启动
-执行`docker run -p 1935:1935 -p 7001:7001 -p 7002:7002 -p 8090:8090 -d gwuhaolin/livego`启动
+构建镜像 `docker build -t livego:1.0 .`
+执行`docker run -p 1935:1935 -p 7001:7001 -p 7002:7002 -p 8090:8090 -d livego:1.0`启动
 
 #### 从源码编译
 1. 下载源码 `git clone https://github.com/gwuhaolin/livego.git`
